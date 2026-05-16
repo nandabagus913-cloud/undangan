@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="dark" lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OFFICIAL INVITATION | Adrian & Bella</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "secondary-fixed": "#dbe1ff",
+          "secondary-container": "#414863",
+          "error": "#ffb4ab",
+          "on-secondary-fixed-variant": "#3e4660",
+          "surface-tint": "#e9c349",
+          "secondary-fixed-dim": "#bec5e5",
+          "outline": "#99907c",
+          "on-tertiary-fixed-variant": "#27438a",
+          "primary": "#f2ca50",
+          "on-secondary-container": "#b0b7d7",
+          "inverse-surface": "#e2e2e2",
+          "on-surface": "#e2e2e2",
+          "tertiary-container": "#97b0ff",
+          "on-error-container": "#ffdad6",
+          "on-tertiary": "#082b72",
+          "on-primary-container": "#554300",
+          "surface-dim": "#121414",
+          "on-error": "#690005",
+          "inverse-primary": "#735c00",
+          "surface-variant": "#333535",
+          "on-tertiary-fixed": "#00174b",
+          "secondary": "#bec5e5",
+          "surface-container-highest": "#333535",
+          "outline-variant": "#4d4635",
+          "surface-container": "#1e2020",
+          "primary-fixed": "#ffe088",
+          "surface-container-low": "#1a1c1c",
+          "tertiary-fixed-dim": "#b4c5ff",
+          "primary-container": "#d4af37",
+          "on-secondary": "#282f49",
+          "on-primary": "#3c2f00",
+          "error-container": "#93000a",
+          "tertiary-fixed": "#dbe1ff",
+          "tertiary": "#bfcdff",
+          "primary-fixed-dim": "#e9c349",
+          "on-tertiary-container": "#254188",
+          "inverse-on-surface": "#2f3131",
+          "background": "#121414",
+          "on-secondary-fixed": "#131a33",
+          "on-background": "#e2e2e2",
+          "surface-container-high": "#282a2b",
+          "on-primary-fixed-variant": "#574500",
+          "on-primary-fixed": "#241a00",
+          "on-surface-variant": "#d0c5af",
+          "surface-container-lowest": "#0c0f0f",
+          "surface-bright": "#38393a",
+          "surface": "#121414"
+        },
+        borderRadius: {
+          "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"
+        },
+        spacing: {
+          "margin-mobile": "24px", "container-max-width": "1200px",
+          "section-gap": "128px", "gutter": "32px", "unit": "8px"
+        },
+        fontFamily: {
+          "body-lg": ["Inter"], "display-lg-mobile": ["Playfair Display"],
+          "body-md": ["Inter"], "display-lg": ["Playfair Display"],
+          "label-caps": ["Inter"], "headline-md": ["Playfair Display"]
+        },
+        fontSize: {
+          "body-lg": ["18px", {"lineHeight": "1.8", "letterSpacing": "0.05em", "fontWeight": "300"}],
+          "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.02em", "fontWeight": "400"}],
+          "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.2em", "fontWeight": "600"}],
+          "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    background-color: #121414;
+    margin: 0; padding: 0;
+    overflow: hidden;
+    height: 100vh; width: 100vw;
+    min-height: max(884px, 100dvh);
+  }
+  .glass-card {
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 0.5px solid rgba(212,175,55,0.2);
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  }
+  .hero-gradient {
+    background: radial-gradient(circle at center, rgba(212,175,55,0.05) 0%, rgba(18,20,20,1) 70%);
+  }
+
+  /* Entrance animations */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes shimmer {
+    0%,100% { opacity: 0.2; }
+    50%      { opacity: 0.6; }
+  }
+
+  .anim-1 { animation: fadeInUp 0.9s ease forwards; animation-delay: 0.1s; opacity: 0; }
+  .anim-2 { animation: fadeInUp 0.9s ease forwards; animation-delay: 0.35s; opacity: 0; }
+  .anim-3 { animation: fadeInUp 0.9s ease forwards; animation-delay: 0.6s; opacity: 0; }
+  .anim-4 { animation: fadeInUp 0.9s ease forwards; animation-delay: 0.85s; opacity: 0; }
+  .anim-bg { animation: fadeIn 1.8s ease forwards; animation-delay: 0s; opacity: 0; }
+
+  .shimmer-ring {
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  /* CTA button glow */
+  .btn-glow {
+    box-shadow: 0 0 0 0 rgba(212,175,55,0);
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 32px 4px rgba(212,175,55,0.25);
+    transform: scale(1.04);
+  }
+  .btn-glow:active { transform: scale(0.97); }
+
+  /* Decorative golden line */
+  .gold-line {
+    background: linear-gradient(90deg, transparent, rgba(212,175,55,0.6), transparent);
+  }
+
+  /* Particle dots */
+  .particle {
+    position: absolute;
+    width: 2px; height: 2px;
+    border-radius: 50%;
+    background: rgba(212,175,55,0.4);
+    animation: floatUp linear infinite;
+  }
+  @keyframes floatUp {
+    0%   { transform: translateY(0) translateX(0); opacity: 0; }
+    20%  { opacity: 1; }
+    80%  { opacity: 0.5; }
+    100% { transform: translateY(-120px) translateX(20px); opacity: 0; }
+  }
+</style>
+</head>
+<body class="dark selection:bg-primary-container selection:text-on-primary-container">
+
+<main class="relative h-screen w-full flex flex-col items-center justify-between py-16 px-[24px] hero-gradient overflow-hidden">
+
+  <!-- Ambient particle layer -->
+  <div id="particles" class="absolute inset-0 pointer-events-none -z-10 anim-bg"></div>
+
+  <!-- Background texture -->
+  <div class="absolute inset-0 -z-20 anim-bg opacity-25">
+    <img
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfcU7ehBO06LKCul5dWc3-eZKvFwlMragAIfdjaMYEyYFSt3WaU7OwRUkjkoRORQl40kCmqNgizInLWMIkcbWtoCAWk7fzdPE_k2rLP6B7jKoLbLb-D174UIvQHtqYpu5UjuEYEZI8SVYhFB3H75KI3A62XLeeGTa2gOEJg5xCsIdheELnurU-WTajkh97TQmOf3vx1ATcuJwVfUHlG3hqmDd6FPzbPqvm17tUSFfOLjAxFVl7YQiLDk2kbBDOne21po5_GWMLBtYV"
+      class="w-full h-full object-cover grayscale mix-blend-overlay"
+      alt="Wedding texture"
+    />
+  </div>
+  <div class="absolute inset-0 -z-10 bg-gradient-to-b from-background via-transparent to-background"></div>
+  <div class="absolute inset-0 -z-10 bg-black/50"></div>
+
+  <!-- TOP: Monogram -->
+  <header class="z-10 anim-1 flex flex-col items-center gap-2">
+    <span class="font-['Inter'] text-[11px] font-semibold text-primary tracking-[0.45em] uppercase">Private Invitation</span>
+    <h1 class="font-['Playfair_Display'] text-[28px] font-bold text-[#ffe088] tracking-[0.25em]">A &amp; B</h1>
+    <div class="gold-line w-20 h-px mt-1"></div>
+  </header>
+
+  <!-- CENTER: Main content -->
+  <section class="flex flex-col items-center text-center gap-8 z-10 w-full max-w-sm anim-2">
+    <div class="space-y-4">
+      <p class="font-['Inter'] text-[11px] font-semibold text-[#d0c5af] uppercase tracking-[0.35em]">The Wedding of</p>
+      <h2 class="font-['Playfair_Display'] text-[42px] font-bold text-[#f2ca50] leading-tight">
+        Adrian <br/>
+        <span class="text-[#bec5e5] opacity-40 font-light text-3xl">&amp;</span><br/>
+        Bella
+      </h2>
+      <div class="gold-line h-px w-16 mx-auto my-4"></div>
+      <p class="font-['Inter'] text-[16px] font-light text-[#e2e2e2] tracking-[0.18em]">12 · 12 · 2024</p>
+    </div>
+
+    <!-- Glassmorphic invitation card -->
+    <div class="glass-card w-full p-8 rounded-xl space-y-4 transition-all duration-500 hover:border-[rgba(212,175,55,0.4)]">
+      <p class="font-['Inter'] text-[10px] font-semibold text-[#d0c5af] uppercase tracking-widest">Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+      <div class="py-4 border-b border-[rgba(77,70,53,0.4)]">
+        <span id="nama-tamu" class="font-['Playfair_Display'] text-[28px] text-[#e2e2e2] italic">[Nama Tamu]</span>
+      </div>
+      <p class="font-['Inter'] text-[11px] text-[#99907c] opacity-70 leading-relaxed tracking-wide">
+        Kami memohon doa restu Anda pada hari yang berbahagia ini.
+      </p>
+    </div>
+  </section>
+
+  <!-- BOTTOM: CTA -->
+  <footer class="z-10 flex flex-col items-center gap-6 w-full max-w-xs anim-4">
+    <button
+      onclick="window.location.href='index1.html'"
+      class="btn-glow group relative w-full bg-[#d4af37] text-[#554300] font-['Inter'] text-[11px] font-semibold py-5 px-10 rounded-full flex items-center justify-center gap-3 transition-all duration-300"
+    >
+      <span class="uppercase tracking-[0.25em]">Buka Undangan</span>
+      <span class="material-symbols-outlined text-[18px]">mail_outline</span>
+      <div class="shimmer-ring absolute inset-0 rounded-full border border-[#f2ca50] pointer-events-none"></div>
+    </button>
+  </footer>
+
+</main>
+
+<script>
+  // Generate ambient gold particles
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 28; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = Math.random() * 100 + 'vw';
+    p.style.bottom = Math.random() * 100 + 'vh';
+    p.style.animationDuration = (4 + Math.random() * 8) + 's';
+    p.style.animationDelay = (Math.random() * 8) + 's';
+    p.style.opacity = (0.2 + Math.random() * 0.5).toString();
+    container.appendChild(p);
+  }
+
+  // --- UTILITY LOGIKA MENARIK NAMA DARI URL (?to=Nama%20Tamu) ---
+  const urlParams = new URLSearchParams(window.location.search);
+  let URLNamaTamu = urlParams.get('to');
+  
+  if (URLNamaTamu) {
+    // Mengubah kode %20 kembali menjadi spasi teks normal
+    document.getElementById('nama-tamu').innerText = decodeURIComponent(URLNamaTamu);
+  } else {
+    // Cadangan otomatis jika link diakses secara publik tanpa nama
+    document.getElementById('nama-tamu').innerText = "Bapak/Ibu/Saudara/i";
+  }
+</script>
+</body>
+</html>
